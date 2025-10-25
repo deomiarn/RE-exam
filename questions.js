@@ -1,655 +1,6336 @@
-// CPRE Foundation Level Practice Exam Questions
-// All 225 questions organized into 5 exams of 45 questions each
+// CPRE Foundation Level Final Practice Exams
+// 5 comprehensive final exams with 45 questions each
+// All Educational Units (1-7) covered
 
 const allExams = {
-    1: { // Exam Set 1 (Questions 1-45)
-        title: "CPRE Practice Exam 1",
-        questions: [
+    "1": {
+        "title": "CPRE Final Exam 1",
+        "questions": [
             {
-                id: 1,
-                points: 2,
-                type: "true-false",
-                question: "Which of the following statements on quality requirements are true and which are false?",
-                options: [
-                    { id: "A", text: "Quality requirements refer to the process of creating software and not to the product." },
-                    { id: "B", text: "Quality requirements can complement functional requirements." },
-                    { id: "C", text: "Quality requirements are elicited after the functional requirements." },
-                    { id: "D", text: "Quality requirements can be substantiated with additional functional requirements." }
+                "id": 1,
+                "points": 1,
+                "type": "single",
+                "question": "What is Requirements Engineering primarily concerned with?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Writing code for software applications"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Understanding and documenting the needs and capabilities that a system shall have"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Testing software after development"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Managing project budgets and timelines"
+                    }
                 ],
-                correctAnswers: { A: false, B: true, C: false, D: true },
-                explanation: "Quality requirements relate to the product (not process), complement functional requirements, can be elicited at any time (not necessarily after), and can be substantiated with additional functional requirements."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 2,
-                points: 1,
-                type: "single",
-                question: "Which of the following tasks is NOT a core task of the Requirements Engineer?",
-                options: [
-                    { id: "A", text: "Eliciting requirements" },
-                    { id: "B", text: "Formalizing requirements" },
-                    { id: "C", text: "Documenting requirements" },
-                    { id: "D", text: "Validating requirements" }
+                "id": 2,
+                "points": 2,
+                "type": "single",
+                "question": "Which of the following is NOT one of the nine fundamental principles of RE?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Value-orientation"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Stakeholders"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Cost-minimization"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Validation"
+                    }
                 ],
-                correctAnswers: ["B"],
-                explanation: "Formalizing requirements is not a core task. The core tasks are: Elicitation, Documentation, Validation, and Management."
+                "correctAnswers": [
+                    "C"
+                ],
+                "explanation": "Correct answer is C"
             },
             {
-                id: 3,
-                points: 1,
-                type: "multiple",
-                question: "Amongst other things, the customer demands the following from the contractor:\nA) The contractor shall process a change request within five days.\nB) The test reports from the integration test must be disclosed.\nC) At any time, the system shall enable a throughput of 100 transactions per second.\nD) The Subversion tool must be used for configuration management.\nE) Under normal load, the response time must be no more than two seconds in 90% of cases.\n\nWhich two requirements refer to the system to be realized?",
-                options: [
-                    { id: "A", text: "Requirement A" },
-                    { id: "B", text: "Requirement B" },
-                    { id: "C", text: "Requirement C" },
-                    { id: "D", text: "Requirement D" },
-                    { id: "E", text: "Requirement E" }
+                "id": 3,
+                "points": 2,
+                "type": "single",
+                "question": "What is the main purpose of abstraction levels in requirements documentation?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To make documents longer"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To separate concerns and manage complexity by documenting requirements at different levels of detail"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To confuse stakeholders"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To reduce the number of requirements"
+                    }
                 ],
-                correctAnswers: ["C", "E"],
-                explanation: "C and E are system requirements (performance requirements). A is a process requirement, B is a documentation requirement, and D is a constraint/tool requirement."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 4,
-                points: 1,
-                type: "single",
-                question: "Which of the following statements does NOT represent a fundamental principle of Requirements Engineering?",
-                options: [
-                    { id: "A", text: "Value orientation" },
-                    { id: "B", text: "Problem - requirement - solution" },
-                    { id: "C", text: "Regular retrospectives" },
-                    { id: "D", text: "Systematic and disciplined work" }
+                "id": 4,
+                "points": 2,
+                "type": "single",
+                "question": "According to Principle 1 (Value-orientation), how is the value of a requirement calculated?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Value = Cost + Benefit"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Value = Benefit - Cost"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Value = Cost \u00d7 Benefit"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Value = Benefit / Cost"
+                    }
                 ],
-                correctAnswers: ["C"],
-                explanation: "Regular retrospectives is an agile practice, not one of the 9 fundamental RE principles. The 9 principles include: stakeholders, context, value orientation, problem-solution-requirement, validation, shared understanding, innovation, systematic work, and evolution."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 5,
-                points: 2,
-                type: "true-false",
-                question: "Shared understanding is a principle of Requirements Engineering. For each of the following statements about shared understanding decide, whether it is true or false.",
-                options: [
-                    { id: "A", text: "Achieving explicit shared understanding is one of the main goals of Requirements Engineering." },
-                    { id: "B", text: "Without shared understanding, it is impossible to identify the relevant requirement sources." },
-                    { id: "C", text: "Some degree of implicit shared understanding is crucial because it is impossible to specify everything explicitly." },
-                    { id: "D", text: "Requirements Engineering in agile development does not work without relying on implicit shared understanding." }
+                "id": 5,
+                "points": 2,
+                "type": "single",
+                "question": "What is the Kano model used for in Requirements Engineering?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To prioritize requirements based on cost"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To classify features based on their effect on customer satisfaction"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To create use case diagrams"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To manage project timelines"
+                    }
                 ],
-                correctAnswers: { A: true, B: true, C: true, D: true },
-                explanation: "All statements about shared understanding are true. It's a main goal of RE, necessary for identifying sources, requires some implicit understanding, and is crucial in agile development."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 6,
-                points: 2,
-                type: "matching",
-                question: "When defining the system boundary and the context boundary, which aspects need to be considered and which do not need to be considered?",
-                options: [
-                    { id: "A", text: "The system" },
-                    { id: "B", text: "The system context" },
-                    { id: "C", text: "The application domain" },
-                    { id: "D", text: "The interfaces between system and system context" }
+                "id": 6,
+                "points": 1,
+                "type": "single",
+                "question": "Which of the following is a characteristic of natural-language-based work products?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They are always unambiguous"
+                    },
+                    {
+                        "id": "B",
+                        "text": "They can be understood by non-technical stakeholders"
+                    },
+                    {
+                        "id": "C",
+                        "text": "They provide automatic consistency checking"
+                    },
+                    {
+                        "id": "D",
+                        "text": "They require special tools to read"
+                    }
                 ],
-                correctAnswers: { A: "needs", B: "needs", C: "needs", D: "needs" },
-                explanation: "All aspects (system, system context, application domain, and interfaces) need to be considered when defining boundaries."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 7,
-                points: 1,
-                type: "single",
-                question: "During the Requirements Engineering process for an online database application, you find out that data protection regulations do not apply, as the data processed by the system is anonymized. What will be influenced by this finding?",
-                options: [
-                    { id: "A", text: "System boundary" },
-                    { id: "B", text: "Context boundary" },
-                    { id: "C", text: "System interfaces" },
-                    { id: "D", text: "Application boundary" }
+                "id": 7,
+                "points": 2,
+                "type": "single",
+                "question": "What does the term \"requirement\" denote according to the CPRE glossary?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Only a documented representation"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Only a need perceived by a stakeholder"
+                    },
+                    {
+                        "id": "C",
+                        "text": "A need perceived by a stakeholder, a capability/property that a system shall have, and a documented representation"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only technical specifications"
+                    }
                 ],
-                correctAnswers: ["B"],
-                explanation: "Data protection regulations are part of the context (environment), so this affects the context boundary."
+                "correctAnswers": [
+                    "C"
+                ],
+                "explanation": "Correct answer is C"
             },
             {
-                id: 8,
-                points: 1,
-                type: "single",
-                question: "Which of the following statements regarding work products is NOT correct?",
-                options: [
-                    { id: "A", text: "Any recorded information that is created during Requirements Engineering is a work product." },
-                    { id: "B", text: "Recorded artifacts that describe gathered information as an intermediate or final result are work products." },
-                    { id: "C", text: "User stories, activity diagrams, use cases and prototypes are work products." },
-                    { id: "D", text: "Only final requirements documents that describe a fixed set of requirements are work products." }
+                "id": 8,
+                "points": 2,
+                "type": "single",
+                "question": "What is the primary purpose of configuring an RE process?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To make the process as complex as possible"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To fit the given development and system context"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To follow industry standards exactly"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To minimize stakeholder involvement"
+                    }
                 ],
-                correctAnswers: ["D"],
-                explanation: "Work products include intermediate results, not just final documents. User stories, diagrams, use cases, and prototypes are all work products."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 9,
-                points: 1,
-                type: "single",
-                question: "Which of the following concepts CANNOT be found in UML class diagrams?",
-                options: [
-                    { id: "A", text: "Associations" },
-                    { id: "B", text: "States" },
-                    { id: "C", text: "Multiplicities" },
-                    { id: "D", text: "Attributes" }
+                "id": 9,
+                "points": 1,
+                "type": "single",
+                "question": "Which elicitation technique is most appropriate for reaching large numbers of stakeholders with predefined questions?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Interviews"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Workshops"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Questionnaires"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Observation"
+                    }
                 ],
-                correctAnswers: ["B"],
-                explanation: "States are shown in state diagrams, not class diagrams. Class diagrams show associations, multiplicities, and attributes."
+                "correctAnswers": [
+                    "C"
+                ],
+                "explanation": "Correct answer is C"
             },
             {
-                id: 10,
-                points: 2,
-                type: "multiple",
-                question: "From the following sentences, choose the two best combinations of the role and its criteria for the requirements.",
-                options: [
-                    { id: "A", text: "For the testers, it must be possible to realize the requirements." },
-                    { id: "B", text: "For the developers, it must be possible to change the requirements easily." },
-                    { id: "C", text: "For all people involved, the requirements in a work product have to be consistent." },
-                    { id: "D", text: "For the project manager, the requirements have to be necessary." },
-                    { id: "E", text: "For the maintenance staff, it must be possible to prioritize the requirements." }
+                "id": 10,
+                "points": 2,
+                "type": "single",
+                "question": "What is requirements management primarily concerned with?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Creating new requirements"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Managing existing requirements including storing, changing, and tracing"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Deleting old requirements"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only documenting requirements"
+                    }
                 ],
-                correctAnswers: ["C", "D"],
-                explanation: "Consistency is important for all stakeholders (C), and necessity is important for project managers (D). A is incorrect (testers verify, not realize), B relates to modifiability, and E is not specific to maintenance."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 11,
-                points: 2,
-                type: "multiple",
-                question: "A company wants to support its process of tender preparation. You discover terminology issues and descriptions of user-system interactions. Which two approaches are particularly well suited?",
-                options: [
-                    { id: "A", text: "Creating a statechart" },
-                    { id: "B", text: "Establishing a glossary" },
-                    { id: "C", text: "Eliciting and documenting the quality requirements" },
-                    { id: "D", text: "Creating a use case diagram and specifying the use cases" },
-                    { id: "E", text: "Creating and testing prototypes" }
+                "id": 11,
+                "points": 1,
+                "type": "single",
+                "question": "What is a phrase template?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A complete document structure"
+                    },
+                    {
+                        "id": "B",
+                        "text": "A predefined syntactic structure for expressing a single requirement"
+                    },
+                    {
+                        "id": "C",
+                        "text": "A graphical model"
+                    },
+                    {
+                        "id": "D",
+                        "text": "A test case format"
+                    }
                 ],
-                correctAnswers: ["B", "D"],
-                explanation: "A glossary addresses terminology issues (B), and use cases capture user-system interactions (D)."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 12,
-                points: 2,
-                type: "matching",
-                question: "Which of the following statements on the choice of notations for the documentation of functional requirements apply and which do not apply?",
-                options: [
-                    { id: "A", text: "Stakeholders should be able to read the notation used for a work product." },
-                    { id: "B", text: "Diagrams have to be applied in projects with object-oriented development." },
-                    { id: "C", text: "To ensure optimal communication, a notation that is aligned to the type of requirement should be used." },
-                    { id: "D", text: "Graphical notations are well suited for describing system requirements." }
+                "id": 12,
+                "points": 2,
+                "type": "single",
+                "question": "Which principle states that requirements cannot be understood in isolation?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Principle 1: Value-orientation"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Principle 3: Shared understanding"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Principle 4: Context"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Principle 7: Evolution"
+                    }
                 ],
-                correctAnswers: { A: "applies", B: "does-not", C: "applies", D: "applies" },
-                explanation: "Stakeholders should understand notations (A applies), diagrams are not mandatory for OO (B does not apply), notation should match requirement type (C applies), and graphical notations work well for system requirements (D applies)."
+                "correctAnswers": [
+                    "C"
+                ],
+                "explanation": "Correct answer is C"
             },
             {
-                id: 13,
-                points: 2,
-                type: "true-false",
-                question: "Which of the following statements about quality criteria are true and which are false?",
-                options: [
-                    { id: "A", text: "A requirement specification is non-redundant if each requirement is documented only once and does not overlap with others." },
-                    { id: "B", text: "A use case diagram might be not consistent with an activity diagram even if both of them are non-redundant." },
-                    { id: "C", text: "A requirements specification is consistent if no single requirement contradicts with other requirements." },
-                    { id: "D", text: "A use case specification is conformant if it contains all relevant requirements for the final product." }
+                "id": 13,
+                "points": 2,
+                "type": "single",
+                "question": "What category of Kano features provides basic functionality that customers expect?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Satisfiers"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Delighters"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Dissatisfiers"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Indifferent features"
+                    }
                 ],
-                correctAnswers: { A: true, B: true, C: true, D: false },
-                explanation: "A, B, and C are true descriptions of quality criteria. D is false - conformant means following standards/templates, not completeness (which is 'complete')."
+                "correctAnswers": [
+                    "C"
+                ],
+                "explanation": "Correct answer is C"
             },
             {
-                id: 14,
-                points: 2,
-                type: "multiple",
-                question: "Which are the two best arguments for using phrase templates?",
-                options: [
-                    { id: "A", text: "Phrase templates help to document well-structured requirements by providing a predefined syntactic structure." },
-                    { id: "B", text: "Requirements formulated in accordance with a phrase template do not contain incomplete relationships." },
-                    { id: "C", text: "Learning how to write requirements in accordance with a phrase template does not require much time." },
-                    { id: "D", text: "Using a phrase template basically delivers a greater degree of information content." },
-                    { id: "E", text: "Requirements written in accordance with a phrase template ensure that the quality criteria for requirements are met." }
+                "id": 14,
+                "points": 1,
+                "type": "single",
+                "question": "Which type of tool support is related to defining and storing requirements attributes?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Documentation of knowledge"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Management of requirements"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Modeling of requirements"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Testing of requirements"
+                    }
                 ],
-                correctAnswers: ["A", "C"],
-                explanation: "Phrase templates provide structure (A) and are easy to learn (C). They don't guarantee completeness (B), information content (D), or all quality criteria (E)."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 15,
-                points: 1,
-                type: "single",
-                question: "You are given the requirement: 'The system Alpha should display all data sets in all submenus'. What is the most severe issue?",
-                options: [
-                    { id: "A", text: "The requirement is written in the passive voice." },
-                    { id: "B", text: "Universal quantifiers have been used." },
-                    { id: "C", text: "The requirement has incomplete conditions." },
-                    { id: "D", text: "Nominalizations have been used." }
+                "id": 15,
+                "points": 2,
+                "type": "single",
+                "question": "What are the three aspects that requirements models can focus on?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Cost, time, and quality"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Structure and data, function and flow, state and behavior"
+                    },
+                    {
+                        "id": "C",
+                        "text": "People, process, and technology"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Planning, execution, and monitoring"
+                    }
                 ],
-                correctAnswers: ["B"],
-                explanation: "The words 'all data sets' and 'all submenus' are universal quantifiers that should be avoided as they are often unrealistic and hard to test."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 16,
-                points: 2,
-                type: "true-false",
-                question: "Which of the following statements are true and which are false when working with template-based work products?",
-                options: [
-                    { id: "A", text: "Templates provide a blueprint for structuring single requirements, as well as whole specifications." },
-                    { id: "B", text: "Template-based work products for single requirements can help to prevent incomplete formulation of requirements in natural language." },
-                    { id: "C", text: "Template-based work products are inherently better in content than freely formulated requirements." },
-                    { id: "D", text: "Templates are obligatory for all authors of a requirements specification." }
+                "id": 16,
+                "points": 2,
+                "type": "single",
+                "question": "What is the purpose of a life cycle model for requirements?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To define the physical lifecycle of hardware"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To define allowed statuses and state transitions for work products"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To plan project schedules"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To calculate costs"
+                    }
                 ],
-                correctAnswers: { A: true, B: true, C: false, D: false },
-                explanation: "Templates provide structure (A) and help prevent incomplete formulations (B), but don't guarantee better content (C) and are not mandatory (D)."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 17,
-                points: 1,
-                type: "single",
-                question: "A system for managing a courier service fleet periodically transmits vehicle position. Requirements describe states based on ignition key and driver seat. Which diagram best supports this type of requirement?",
-                options: [
-                    { id: "A", text: "State diagram" },
-                    { id: "B", text: "Class diagram" },
-                    { id: "C", text: "Context diagram" },
-                    { id: "D", text: "Use case diagram" }
+                "id": 17,
+                "points": 1,
+                "type": "single",
+                "question": "Why is Requirements Engineering important?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It only helps with documentation"
+                    },
+                    {
+                        "id": "B",
+                        "text": "It reduces the risk of building the wrong system and costly rework"
+                    },
+                    {
+                        "id": "C",
+                        "text": "It is required by law"
+                    },
+                    {
+                        "id": "D",
+                        "text": "It makes projects longer"
+                    }
                 ],
-                correctAnswers: ["A"],
-                explanation: "State diagrams are ideal for showing system states and transitions between states (e.g., operational, lost-signal)."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 18,
-                points: 2,
-                type: "matching",
-                question: "A contest for short films has constraints shown in a class diagram with Actor-Film-Director relationships. Do the following statements match the diagram where Film has multiplicities [1..3] directors and [1..10] actors?",
-                options: [
-                    { id: "A", text: "Three directors may direct a film collaboratively." },
-                    { id: "B", text: "A film with only one actor may be submitted." },
-                    { id: "C", text: "A director may direct two films submitted." },
-                    { id: "D", text: "An actor may star in any number of films." }
+                "id": 18,
+                "points": 1,
+                "type": "single",
+                "question": "Which of the following is a questioning technique?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Prototyping"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Interviews"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Perspective-based reading"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Field observation"
+                    }
                 ],
-                correctAnswers: { A: "does-not", B: "matches", C: "matches", D: "matches" },
-                explanation: "Based on typical UML multiplicities: maximum 3 directors (so A doesn't match exactly), minimum 1 actor allowed (B matches), director can direct multiple films (C matches), actor can star in any number (D matches)."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 19,
-                points: 1,
-                type: "single",
-                question: "What is NOT depicted in a use case diagram?",
-                options: [
-                    { id: "A", text: "The process steps of an application" },
-                    { id: "B", text: "The actors of an application" },
-                    { id: "C", text: "The boundary between an application and its environment" },
-                    { id: "D", text: "An application's functionality" }
+                "id": 19,
+                "points": 2,
+                "type": "single",
+                "question": "Which factor influences the configuration of an RE process?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "The color of the office walls"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Overall process fit with system development process"
+                    },
+                    {
+                        "id": "C",
+                        "text": "The personal preferences of developers"
+                    },
+                    {
+                        "id": "D",
+                        "text": "The weather conditions"
+                    }
                 ],
-                correctAnswers: ["A"],
-                explanation: "Use case diagrams show actors, boundaries, and functionality, but NOT detailed process steps (those are shown in activity diagrams)."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 20,
-                points: 2,
-                type: "matching",
-                question: "A state diagram models password authorization states. Determine which requirements are modeled correctly and which are incorrect or not modeled.",
-                options: [
-                    { id: "A", text: "Users in state blocked can be unblocked by resetting the user's password." },
-                    { id: "B", text: "If abuse for a user in state entitled has been noticed, the user's password is blocked." },
-                    { id: "C", text: "If the validity period for a user in state entitled has expired, the password is deleted and the user is set to state not entitled." },
-                    { id: "D", text: "If an application request is approved, the user gets an approval mail." }
+                "id": 20,
+                "points": 2,
+                "type": "single",
+                "question": "What does Principle 6 (Validation) emphasize?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Requirements must be validated to ensure they match stakeholders' needs"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Validation is optional"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only technical requirements need validation"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Validation should only happen after system deployment"
+                    }
                 ],
-                correctAnswers: { A: "incorrect", B: "correct", C: "correct", D: "incorrect" },
-                explanation: "Based on typical state transitions: unblocking from blocked state is not shown (A incorrect), abuse causes blocking (B correct), expiry leads to not entitled (C correct), approval mail is not modeled (D incorrect)."
+                "correctAnswers": [
+                    "A"
+                ],
+                "explanation": "Correct answer is A"
             },
             {
-                id: 21,
-                points: 2,
-                type: "matching",
-                question: "An activity diagram shows measurement initialization. Do the following statements match the diagram?",
-                options: [
-                    { id: "A", text: "Initialize measuring device must happen prior to Register at server." },
-                    { id: "B", text: "Register at server happens as soon as Load certificates is ready." },
-                    { id: "C", text: "Initialize network connection and Load certificates must finish at the same time." },
-                    { id: "D", text: "Deactivate measuring device is executed as soon as Data receipt confirmed is true." }
+                "id": 21,
+                "points": 1,
+                "type": "single",
+                "question": "What is a form template used for?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To create entire documents"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To provide predefined fields to be filled in for medium-sized work products like use cases"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To write code"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To test requirements"
+                    }
                 ],
-                correctAnswers: { A: "does-not", B: "does-not", C: "does-not", D: "matches" },
-                explanation: "Activity diagrams show parallel and sequential flows. Typically, parallel activities can finish independently, and decision points control flow to final activities."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 22,
-                points: 2,
-                type: "multiple",
-                question: "Which two substantial advantages do graphical models have over plain textual specifications in natural language?",
-                options: [
-                    { id: "A", text: "Models often focus on specific aspects and reduce the cognitive load for understanding the requirements." },
-                    { id: "B", text: "Models allow the complete description of requirements for a planned system." },
-                    { id: "C", text: "Models can be checked more easily than natural language and have a restricted syntax that reduces possible ambiguities and omissions." },
-                    { id: "D", text: "Models are created with tools using a repository. Therefore, models are better suited for managing requirements." },
-                    { id: "E", text: "With proper tools, source code can be generated from models, thus saving the effort for testing." }
+                "id": 22,
+                "points": 2,
+                "type": "single",
+                "question": "What is version control in requirements management?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Controlling which stakeholders see requirements"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Managing multiple versions of work products as they evolve"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Limiting the number of requirements"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Controlling project costs"
+                    }
                 ],
-                correctAnswers: ["A", "C"],
-                explanation: "Models focus on specific aspects reducing cognitive load (A) and have restricted syntax reducing ambiguities (C). They don't show everything (B), repository use doesn't make them better for management (D), and code generation doesn't eliminate testing (E)."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 23,
-                points: 2,
-                type: "true-false",
-                question: "For a navigation activity diagram, are the following statements true or false?",
-                options: [
-                    { id: "A", text: "A route can be calculated without querying traffic information." },
-                    { id: "B", text: "A route can be calculated after querying traffic information." },
-                    { id: "C", text: "The system can ask for the desire to calculate the route dynamically without having to determine the GPS coordinates first." },
-                    { id: "D", text: "The order of Enter destination and Determine GPS coordinates is arbitrary." }
+                "id": 23,
+                "points": 2,
+                "type": "single",
+                "question": "What are collaboration techniques in requirements elicitation?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Techniques where only one person works alone"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Group-oriented techniques like workshops that leverage interaction between participants"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Automated requirements generation"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Code review sessions"
+                    }
                 ],
-                correctAnswers: { A: true, B: true, C: false, D: true },
-                explanation: "Based on typical navigation flows: routes can be calculated with or without traffic info (A, B true), GPS is needed before calculation (C false), destination and GPS can be in any order (D true)."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 24,
-                points: 2,
-                type: "multiple",
-                question: "You are modeling enrollment steps for a university management system. Which two diagrams are best suited?",
-                options: [
-                    { id: "A", text: "BPMN diagram" },
-                    { id: "B", text: "Laus-Ohl diagram" },
-                    { id: "C", text: "Activity diagram" },
-                    { id: "D", text: "Class diagram" },
-                    { id: "E", text: "Use case diagram" }
+                "id": 24,
+                "points": 2,
+                "type": "single",
+                "question": "What should be considered when introducing RE tools?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Only the license costs"
+                    },
+                    {
+                        "id": "B",
+                        "text": "All life cycle costs including implementation, operation, and maintenance"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only the training costs"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only the initial purchase costs"
+                    }
                 ],
-                correctAnswers: ["A", "C"],
-                explanation: "BPMN diagrams (A) and Activity diagrams (C) are both excellent for modeling process steps. Use case diagrams show functionality but not detailed steps, and class diagrams show structure, not processes."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 25,
-                points: 1,
-                type: "single",
-                question: "What is described in the function and flow aspect?",
-                options: [
-                    { id: "A", text: "Portability of the system" },
-                    { id: "B", text: "Reaction of the system to an internal state transition" },
-                    { id: "C", text: "Structure of input and output data" },
-                    { id: "D", text: "Transformation of input data into output data" }
+                "id": 25,
+                "points": 2,
+                "type": "single",
+                "question": "According to Principle 8 (Innovation), what should good RE strive for?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Giving stakeholders exactly what they ask for"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Making stakeholders happy and excited beyond their expectations"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Minimizing requirements"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Following competitors exactly"
+                    }
                 ],
-                correctAnswers: ["D"],
-                explanation: "The function and flow aspect describes how the system transforms inputs into outputs (functional behavior)."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 26,
-                points: 1,
-                type: "single",
-                question: "You notice an inconsistency in stakeholder statements about menu arrangement. What is the best way to deal with this?",
-                options: [
-                    { id: "A", text: "You discuss this finding with an available stakeholder and get a clear statement and record their advice." },
-                    { id: "B", text: "You invite all stakeholders involved to a meeting and reach an agreement on this point." },
-                    { id: "C", text: "Due to your experience with user interfaces you can solve the problem on your own, thus saving valuable time." },
-                    { id: "D", text: "You forward the problem to the product owner and let them decide on this matter based on the evaluation of potential risks." }
+                "id": 26,
+                "points": 1,
+                "type": "single",
+                "question": "What does \"overall process fit\" mean as an influencing factor for RE process?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "The process should be as short as possible"
+                    },
+                    {
+                        "id": "B",
+                        "text": "The RE process must fit the overall system development process"
+                    },
+                    {
+                        "id": "C",
+                        "text": "The process should involve as few people as possible"
+                    },
+                    {
+                        "id": "D",
+                        "text": "The process should only focus on documentation"
+                    }
                 ],
-                correctAnswers: ["B"],
-                explanation: "When there are conflicting statements from multiple stakeholders, the best approach is to bring them together to reach a consensus (B)."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 27,
-                points: 1,
-                type: "multiple",
-                question: "Which two statements best characterize the relationship between a Requirements Engineer and a stakeholder in the role of a tester?",
-                options: [
-                    { id: "A", text: "The Requirements Engineer provides input for the stakeholder's work." },
-                    { id: "B", text: "The Requirements Engineer's results are managed by the stakeholder." },
-                    { id: "C", text: "The stakeholder can contribute to ensure the quality of the Requirements Engineer's work." },
-                    { id: "D", text: "The stakeholder supervises the Requirements Engineer's work." },
-                    { id: "E", text: "There is no relationship between the Requirements Engineer's work and the stakeholder role." }
+                "id": 27,
+                "points": 2,
+                "type": "single",
+                "question": "Which quality criterion expresses how well a model represents the facts correctly and completely?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Syntactic quality"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Semantic quality"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Pragmatic quality"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Economic quality"
+                    }
                 ],
-                correctAnswers: ["A", "C"],
-                explanation: "The RE provides requirements for testers to create test cases (A), and testers contribute to validating requirements quality (C)."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 28,
-                points: 1,
-                type: "single",
-                question: "The Kano model states that dissatisfiers (basic factors) are hard to elicit. Which technique is most effective for dissatisfiers?",
-                options: [
-                    { id: "A", text: "Prototyping" },
-                    { id: "B", text: "Questionnaire" },
-                    { id: "C", text: "Field observation" },
-                    { id: "D", text: "Brainstorming" }
+                "id": 28,
+                "points": 1,
+                "type": "single",
+                "question": "What is the purpose of requirements attributes?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To make requirements longer"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To identify and collect data about work products and requirements"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To hide information from stakeholders"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To increase project costs"
+                    }
                 ],
-                correctAnswers: ["C"],
-                explanation: "Field observation is most effective for discovering dissatisfiers because users don't consciously think about basic expectations - you have to observe them."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 29,
-                points: 2,
-                type: "multiple",
-                question: "Which two aspects are most important when choosing suitable elicitation techniques?",
-                options: [
-                    { id: "A", text: "The availability of the involved people." },
-                    { id: "B", text: "The preferences of the requirements engineer." },
-                    { id: "C", text: "The category of requirements based on Kano classification." },
-                    { id: "D", text: "The complexity of the required tools." },
-                    { id: "E", text: "The habitual use of a technique." }
+                "id": 29,
+                "points": 1,
+                "type": "single",
+                "question": "What are observation techniques used for?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To watch competitors"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To observe stakeholders in their work environment to understand their needs"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To monitor project schedules"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To check code quality"
+                    }
                 ],
-                correctAnswers: ["A", "C"],
-                explanation: "Stakeholder availability (A) and the type of requirements you're trying to elicit based on Kano (C) are the most important factors."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 30,
-                points: 1,
-                type: "single",
-                question: "Which technique is NOT suitable for resolving requirements conflicts?",
-                options: [
-                    { id: "A", text: "Overruling" },
-                    { id: "B", text: "Definition of variants" },
-                    { id: "C", text: "Compromise" },
-                    { id: "D", text: "Sampling" }
+                "id": 30,
+                "points": 2,
+                "type": "single",
+                "question": "Where does Requirements Engineering fit in the system development lifecycle?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Only at the beginning"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Only at the end"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Throughout the entire lifecycle in various development contexts"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only during testing phase"
+                    }
                 ],
-                correctAnswers: ["D"],
-                explanation: "Sampling is a data collection technique, not a conflict resolution technique. Valid conflict resolution techniques include overruling, variants, compromise, voting, and escalation."
+                "correctAnswers": [
+                    "C"
+                ],
+                "explanation": "Correct answer is C"
             },
             {
-                id: 31,
-                points: 2,
-                type: "multiple",
-                question: "Which are the two most important attributes in a stakeholder list?",
-                options: [
-                    { id: "A", text: "Their function/role" },
-                    { id: "B", text: "Their personal preferences" },
-                    { id: "C", text: "Their boss" },
-                    { id: "D", text: "Their relevance" },
-                    { id: "E", text: "Their previous projects" }
+                "id": 31,
+                "points": 2,
+                "type": "single",
+                "question": "What is requirements traceability?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "The ability to track project expenses"
+                    },
+                    {
+                        "id": "B",
+                        "text": "The ability to follow relationships between requirements and other artifacts"
+                    },
+                    {
+                        "id": "C",
+                        "text": "The ability to locate requirements documents"
+                    },
+                    {
+                        "id": "D",
+                        "text": "The ability to measure requirement size"
+                    }
                 ],
-                correctAnswers: ["A", "D"],
-                explanation: "The most important attributes are the stakeholder's role/function (A) and their relevance/importance to the project (D)."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 32,
-                points: 1,
-                type: "multiple",
-                question: "What are the two key advantages of using questionnaires for requirements elicitation?",
-                options: [
-                    { id: "A", text: "Questionnaires allow a high number of participants." },
-                    { id: "B", text: "Questionnaires allow statistically relevant statements on requirements." },
-                    { id: "C", text: "Questionnaires allow the participants' understanding to be validated." },
-                    { id: "D", text: "Questionnaires allow to obtain the most insights on delighters (excitement factors)." },
-                    { id: "E", text: "Questionnaires allow to address the needs of individual stakeholders easily." }
+                "id": 32,
+                "points": 1,
+                "type": "single",
+                "question": "What is a document template?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A single phrase for writing requirements"
+                    },
+                    {
+                        "id": "B",
+                        "text": "A predefined skeleton structure for an entire document"
+                    },
+                    {
+                        "id": "C",
+                        "text": "A graphical diagram"
+                    },
+                    {
+                        "id": "D",
+                        "text": "A testing framework"
+                    }
                 ],
-                correctAnswers: ["A", "B"],
-                explanation: "Questionnaires can reach many participants (A) and provide statistically relevant data (B)."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 33,
-                points: 2,
-                type: "true-false",
-                question: "Which of the following statements about elicitation techniques are true and which are false?",
-                options: [
-                    { id: "A", text: "An interview is a gathering technique." },
-                    { id: "B", text: "An analogy technique is a gathering technique." },
-                    { id: "C", text: "System archeology is an observation technique." },
-                    { id: "D", text: "Apprenticing is an observation technique." }
+                "id": 33,
+                "points": 2,
+                "type": "single",
+                "question": "Which Kano category includes features that customers explicitly request?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Dissatisfiers"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Satisfiers"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Delighters"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Mandatory features"
+                    }
                 ],
-                correctAnswers: { A: true, B: false, C: false, D: true },
-                explanation: "Interview is gathering (A true), analogy is creative not gathering (B false), system archaeology is documentation-based not observation (C false), apprenticing is observation (D true)."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 34,
-                points: 1,
-                type: "single",
-                question: "For a navigation system, one stakeholder demands a female voice only, another opposes this as discriminatory and demands a male voice too. Which type of conflict is this?",
-                options: [
-                    { id: "A", text: "Relationship conflict" },
-                    { id: "B", text: "Interest conflict" },
-                    { id: "C", text: "Structural conflict" },
-                    { id: "D", text: "Value conflict" }
+                "id": 34,
+                "points": 2,
+                "type": "single",
+                "question": "What does Principle 7 (Evolution) state about requirements?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Requirements should never change"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Changing requirements are normal, not exceptional"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Requirements only change in waterfall projects"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Requirements evolution should be prevented"
+                    }
                 ],
-                correctAnswers: ["D"],
-                explanation: "This is a value conflict - different principles and values (gender equality vs. design preference) are in conflict."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 35,
-                points: 2,
-                type: "single",
-                question: "For a safety-critical braking system for high speed trains, which validation technique is most suitable?",
-                options: [
-                    { id: "A", text: "A/B testing" },
-                    { id: "B", text: "Prototype" },
-                    { id: "C", text: "Walkthrough" },
-                    { id: "D", text: "Inspection" }
+                "id": 35,
+                "points": 2,
+                "type": "single",
+                "question": "Which of the following is an influencing factor for RE process configuration?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Complexity and criticality of the system"
+                    },
+                    {
+                        "id": "B",
+                        "text": "The programming language used"
+                    },
+                    {
+                        "id": "C",
+                        "text": "The database vendor"
+                    },
+                    {
+                        "id": "D",
+                        "text": "The office location"
+                    }
                 ],
-                correctAnswers: ["D"],
-                explanation: "Inspection is the most formal and rigorous validation technique, making it ideal for safety-critical systems."
+                "correctAnswers": [
+                    "A"
+                ],
+                "explanation": "Correct answer is A"
             },
             {
-                id: 36,
-                points: 2,
-                type: "multiple",
-                question: "Which two major facets are most important when configuring an RE process?",
-                options: [
-                    { id: "A", text: "The time facet: linear vs. iterative" },
-                    { id: "B", text: "The budget facet: tight vs. large" },
-                    { id: "C", text: "The purpose facet: prescriptive vs. explorative" },
-                    { id: "D", text: "The methodology facet: structure-based vs. process-based" },
-                    { id: "E", text: "The interaction facet: team-driven vs. individual-driven" }
+                "id": 36,
+                "points": 1,
+                "type": "single",
+                "question": "What is the main limitation of using office tools for requirements management?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They are too expensive"
+                    },
+                    {
+                        "id": "B",
+                        "text": "They lack specific requirements management capabilities"
+                    },
+                    {
+                        "id": "C",
+                        "text": "They require special training"
+                    },
+                    {
+                        "id": "D",
+                        "text": "They are too powerful"
+                    }
                 ],
-                correctAnswers: ["A", "C"],
-                explanation: "The three main facets are Time (linear vs. iterative), Purpose (prescriptive vs. explorative), and Target (customer-specific vs. market-oriented). A and C are correct."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 37,
-                points: 1,
-                type: "single",
-                question: "Which combination of process facets is NOT recognized as a standard configuration?",
-                options: [
-                    { id: "A", text: "Product-oriented RE process (iterative, explorative, market oriented)" },
-                    { id: "B", text: "Human-oriented RE process (linear, process-based, individual)" },
-                    { id: "C", text: "Participatory RE process (iterative, explorative, customer specific)" },
-                    { id: "D", text: "Contractual RE process (linear, prescriptive, customer specific)" }
+                "id": 37,
+                "points": 2,
+                "type": "single",
+                "question": "What is a baseline in requirements management?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "The first requirement written"
+                    },
+                    {
+                        "id": "B",
+                        "text": "A formally approved configuration that serves as a reference point"
+                    },
+                    {
+                        "id": "C",
+                        "text": "The minimum number of requirements"
+                    },
+                    {
+                        "id": "D",
+                        "text": "The project start date"
+                    }
                 ],
-                correctAnswers: ["B"],
-                explanation: "Human-oriented RE process is not a recognized standard configuration. The recognized ones are Product-oriented, Participatory, and Contractual."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 38,
-                points: 2,
-                type: "true-false",
-                question: "Which statements about views on requirements are true and which are false?",
-                options: [
-                    { id: "A", text: "Not every stakeholder needs to have access to all requirements." },
-                    { id: "B", text: "Requirements that belong together can be grouped to support the review." },
-                    { id: "C", text: "Requirements can be hidden from unauthorized stakeholders." },
-                    { id: "D", text: "It is assured that several people can work on one specification at the same time." }
+                "id": 38,
+                "points": 2,
+                "type": "single",
+                "question": "What is the main advantage of using models over natural language requirements?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Models are always easier to create"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Models provide overview and help understand relationships between requirements"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Models don't need validation"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Models are always shorter"
+                    }
                 ],
-                correctAnswers: { A: true, B: true, C: true, D: false },
-                explanation: "Views allow selective access (A, C true), grouping for review (B true), but concurrent editing is a tool feature, not a view feature (D false)."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 39,
-                points: 1,
-                type: "single",
-                question: "Which statement about traceability is NOT correct?",
-                options: [
-                    { id: "A", text: "Traceability facilitates an impact analysis." },
-                    { id: "B", text: "Traceability facilitates the verification of implementation." },
-                    { id: "C", text: "Traceability facilitates exports from a requirements management tool." },
-                    { id: "D", text: "Traceability facilitates finding a requirement's source." }
+                "id": 39,
+                "points": 1,
+                "type": "single",
+                "question": "What is requirements validation?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Making requirements longer"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Confirming that requirements match stakeholders' needs"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Translating requirements to code"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Prioritizing requirements"
+                    }
                 ],
-                correctAnswers: ["C"],
-                explanation: "Traceability supports impact analysis (A), verification (B), and finding sources (D), but does not facilitate tool exports (C)."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 40,
-                points: 2,
-                type: "true-false",
-                question: "Which statements about unique identifiers are true and which are false? Unique identifiers are helpful...",
-                options: [
-                    { id: "A", text: "... for estimating the overall size of a specification." },
-                    { id: "B", text: "... for having an unambiguous basis for communication." },
-                    { id: "C", text: "... for establishing references to other requirements." },
-                    { id: "D", text: "... for establishing traceability to other development artifacts." }
+                "id": 40,
+                "points": 2,
+                "type": "single",
+                "question": "What does Principle 3 (Shared understanding) emphasize?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Only developers need to understand requirements"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Successful development requires a common understanding among stakeholders"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Understanding is not important"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only technical people need to understand"
+                    }
                 ],
-                correctAnswers: { A: false, B: true, C: true, D: true },
-                explanation: "Unique IDs support communication (B), references (C), and traceability (D), but don't help estimate size (A)."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 41,
-                points: 2,
-                type: "multiple",
-                question: "You have a requirements baseline and received change requests. Which answers represent correct change management?",
-                options: [
-                    { id: "A", text: "Changes to baseline requirements are implemented through new versions within this baseline." },
-                    { id: "B", text: "Prior to adjusting requirements, the impact of changes has to be determined." },
-                    { id: "C", text: "Change requests can be submitted anytime and considered for future baselines." },
-                    { id: "D", text: "Time-critical changes are delivered directly to development without analysis." },
-                    { id: "E", text: "If development hasn't started, changes can be processed without a new baseline." }
+                "id": 41,
+                "points": 2,
+                "type": "single",
+                "question": "What is the purpose of change management for requirements?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To prevent any changes to requirements"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To handle requirements changes in a controlled and orderly manner"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To increase the number of requirements"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To reduce stakeholder involvement"
+                    }
                 ],
-                correctAnswers: ["B", "C"],
-                explanation: "Impact analysis is required before changes (B), and change requests can be submitted for future consideration (C). Changes require proper process (not A, D) and baselines are important regardless of development status (not E)."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 42,
-                points: 2,
-                type: "true-false",
-                question: "Which statements about prioritizing requirements are true and which are false? A reason for prioritizing is...",
-                options: [
-                    { id: "A", text: "... to decide which requirements are to be implemented in the next release." },
-                    { id: "B", text: "... to decide on which requirements to focus first in testing." },
-                    { id: "C", text: "... to document how much it would cost to implement a requirement." },
-                    { id: "D", text: "... to recognize which requirements can be reused." }
+                "id": 42,
+                "points": 1,
+                "type": "single",
+                "question": "What is a requirements specification?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A single requirement"
+                    },
+                    {
+                        "id": "B",
+                        "text": "A systematically represented collection of requirements that satisfies given criteria"
+                    },
+                    {
+                        "id": "C",
+                        "text": "A project plan"
+                    },
+                    {
+                        "id": "D",
+                        "text": "A test case"
+                    }
                 ],
-                correctAnswers: { A: true, B: true, C: false, D: false },
-                explanation: "Prioritization helps decide implementation order (A) and testing focus (B), but doesn't document cost (C) or identify reusability (D)."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 43,
-                points: 1,
-                type: "single",
-                question: "Select the best description of a baseline.",
-                options: [
-                    { id: "A", text: "A version of a requirement" },
-                    { id: "B", text: "A released configuration of an individual requirement" },
-                    { id: "C", text: "A released configuration of requirements" },
-                    { id: "D", text: "A not yet released version of a requirements specification" }
+                "id": 43,
+                "points": 1,
+                "type": "single",
+                "question": "Why might stakeholder availability be an influencing factor for RE process?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It determines office hours"
+                    },
+                    {
+                        "id": "B",
+                        "text": "It constrains when and how requirements can be elicited and validated"
+                    },
+                    {
+                        "id": "C",
+                        "text": "It affects the programming language choice"
+                    },
+                    {
+                        "id": "D",
+                        "text": "It determines the project budget"
+                    }
                 ],
-                correctAnswers: ["C"],
-                explanation: "A baseline is a formally approved and released configuration of multiple requirements (not just one requirement or an unreleased version)."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 44,
-                points: 2,
-                type: "true-false",
-                question: "Which statements about choosing RE tools are true and which are false?",
-                options: [
-                    { id: "A", text: "The tool has to support the artifacts demanded in the Requirements Engineering process applied." },
-                    { id: "B", text: "The choice of a tool should be left to the users of the tool." },
-                    { id: "C", text: "The tool has to assist users to set up their test cases as part of the RE process to support shift-left testing." },
-                    { id: "D", text: "The choice of a tool is influenced by the tool chain (e.g., configuration management tool) the tool is to be applied in." }
+                "id": 44,
+                "points": 2,
+                "type": "single",
+                "question": "What is the purpose of artifact-based elicitation techniques?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To create art"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To derive requirements from existing documents and systems"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To replace stakeholders"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To automate coding"
+                    }
                 ],
-                correctAnswers: { A: true, B: false, C: false, D: true },
-                explanation: "Tools must support required artifacts (A true), but choice shouldn't be left only to users (B false). Test case setup is not an RE tool requirement (C false). Tool chain integration matters (D true)."
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             },
             {
-                id: 45,
-                points: 1,
-                type: "single",
-                question: "Which task is NOT a capability of a requirements management tool?",
-                options: [
-                    { id: "A", text: "Tracking logical relationships between requirements" },
-                    { id: "B", text: "Modelling of requirements" },
-                    { id: "C", text: "Measuring and reporting of the Requirements Engineering process" },
-                    { id: "D", text: "Providing support for the prioritization of requirements" }
+                "id": 45,
+                "points": 1,
+                "type": "single",
+                "question": "What is CASE tooling in the context of RE?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Computer-Aided Software Engineering tools that support specific RE tasks"
+                    },
+                    {
+                        "id": "B",
+                        "text": "A case study method"
+                    },
+                    {
+                        "id": "C",
+                        "text": "A type of requirements document"
+                    },
+                    {
+                        "id": "D",
+                        "text": "A programming framework"
+                    }
                 ],
-                correctAnswers: ["B"],
-                explanation: "Requirements management tools support tracing (A), process measurement (C), and prioritization (D), but modeling is typically done with separate modeling tools."
+                "correctAnswers": [
+                    "A"
+                ],
+                "explanation": "Correct answer is A"
+            }
+        ]
+    },
+    "2": {
+        "title": "CPRE Final Exam 2",
+        "questions": [
+            {
+                "id": 1,
+                "points": 2,
+                "type": "single",
+                "question": "Which principle states that requirements are a means to an end, not an end in itself?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Principle 1: Value-orientation"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Principle 2: Stakeholders"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Principle 5: Problem-Requirement-Solution"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Principle 9: Systematic work"
+                    }
+                ],
+                "correctAnswers": [
+                    "A"
+                ],
+                "explanation": "Correct answer is A"
+            },
+            {
+                "id": 2,
+                "points": 1,
+                "type": "single",
+                "question": "What should be avoided when creating work products according to general documentation guidelines?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Clear structure"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Redundancy by repeating the same content"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Consistent terminology"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Appropriate abstraction"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 3,
+                "points": 2,
+                "type": "single",
+                "question": "What is the main purpose of elicitation techniques?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To write code"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To discover and gather requirements from various sources"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To test software"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To manage projects"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 4,
+                "points": 1,
+                "type": "single",
+                "question": "What role does a Requirements Engineer play?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Only writing documentation"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Eliciting, documenting, validating, and managing requirements"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only coding"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only testing"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 5,
+                "points": 2,
+                "type": "single",
+                "question": "What is the purpose of requirements prioritization?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To make all requirements equal"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To determine the order and importance of implementation"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To delete requirements"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To hide requirements from stakeholders"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 6,
+                "points": 2,
+                "type": "single",
+                "question": "What is an RE process?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A software application"
+                    },
+                    {
+                        "id": "B",
+                        "text": "A structured approach to shape and guide RE work in a given context"
+                    },
+                    {
+                        "id": "C",
+                        "text": "A database system"
+                    },
+                    {
+                        "id": "D",
+                        "text": "A testing methodology"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 7,
+                "points": 1,
+                "type": "single",
+                "question": "What type of work product uses UML diagrams?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Natural-language-based"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Template-based"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Model-based"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Code-based"
+                    }
+                ],
+                "correctAnswers": [
+                    "C"
+                ],
+                "explanation": "Correct answer is C"
+            },
+            {
+                "id": 8,
+                "points": 1,
+                "type": "single",
+                "question": "Which type of RE tool support helps with measuring and reporting on the RE process?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Management of requirements"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Management of the RE process"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Documentation of knowledge"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Modeling of requirements"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 9,
+                "points": 2,
+                "type": "single",
+                "question": "What are design and idea generating techniques primarily used for in RE?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To test requirements"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To find innovative solutions and delighters"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To manage budgets"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To write code"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 10,
+                "points": 2,
+                "type": "single",
+                "question": "According to Principle 5 (Problem-Requirement-Solution), what is the relationship between these three elements?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They are completely independent"
+                    },
+                    {
+                        "id": "B",
+                        "text": "They are inevitably intertwined"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only solution matters"
+                    },
+                    {
+                        "id": "D",
+                        "text": "They should never be mixed"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 11,
+                "points": 2,
+                "type": "single",
+                "question": "What is implicit traceability?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Hidden requirements"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Traceability that can be inferred from naming conventions and structures"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Requirements without documentation"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Deleted requirements"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 12,
+                "points": 2,
+                "type": "single",
+                "question": "Which aspect should be considered when documenting requirements according to general guidelines?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Structure and data"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Function and flow"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Context including external actors"
+                    },
+                    {
+                        "id": "D",
+                        "text": "All of the above"
+                    }
+                ],
+                "correctAnswers": [
+                    "D"
+                ],
+                "explanation": "Correct answer is D"
+            },
+            {
+                "id": 13,
+                "points": 1,
+                "type": "single",
+                "question": "What is one of the main challenges in Requirements Engineering?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Writing too many requirements"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Understanding and satisfying diverse stakeholder needs"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Making requirements too simple"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Avoiding stakeholder involvement"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 14,
+                "points": 2,
+                "type": "single",
+                "question": "What is crowd-based Requirements Engineering?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Requirements from random people"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Participatory RE with a large group of stakeholders using platforms"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Requirements generated by AI"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Requirements from competitors"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 15,
+                "points": 2,
+                "type": "single",
+                "question": "What does \"volatility of requirements\" refer to as an influencing factor?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "How expensive requirements are"
+                    },
+                    {
+                        "id": "B",
+                        "text": "How frequently requirements are expected to change"
+                    },
+                    {
+                        "id": "C",
+                        "text": "How many requirements there are"
+                    },
+                    {
+                        "id": "D",
+                        "text": "How complex requirements are"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 16,
+                "points": 2,
+                "type": "single",
+                "question": "What is explicit traceability?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Obvious requirements"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Traceability relationships that are explicitly documented"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Requirements that everyone knows"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Requirements visible to all"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 17,
+                "points": 1,
+                "type": "single",
+                "question": "What is the purpose of using consistent terms in documentation?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To make documents longer"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To ensure clear communication and avoid misunderstandings"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To confuse readers"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To save time"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 18,
+                "points": 2,
+                "type": "single",
+                "question": "What should be done before selecting an RE tool?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Buy the most expensive tool"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Define objectives and requirements for the tool"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Ask competitors what they use"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Choose the tool with most features"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 19,
+                "points": 2,
+                "type": "single",
+                "question": "What does Principle 2 (Stakeholders) emphasize?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Stakeholders are not important"
+                    },
+                    {
+                        "id": "B",
+                        "text": "RE is about satisfying stakeholders' desires and needs"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only end users are stakeholders"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Stakeholders should not be consulted"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 20,
+                "points": 1,
+                "type": "single",
+                "question": "Which technique involves directly observing users in their work environment?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Interviews"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Questionnaires"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Field observation"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Document analysis"
+                    }
+                ],
+                "correctAnswers": [
+                    "C"
+                ],
+                "explanation": "Correct answer is C"
+            },
+            {
+                "id": 21,
+                "points": 2,
+                "type": "single",
+                "question": "What are requirements configurations?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Computer hardware settings"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Coherent sets of requirements recognized as a unit"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Project timelines"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Testing strategies"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 22,
+                "points": 2,
+                "type": "single",
+                "question": "What is pragmatic quality of a model?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "How cheap it is to create"
+                    },
+                    {
+                        "id": "B",
+                        "text": "How suitable it is for its intended use"
+                    },
+                    {
+                        "id": "C",
+                        "text": "How fast it can be created"
+                    },
+                    {
+                        "id": "D",
+                        "text": "How many pages it has"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 23,
+                "points": 2,
+                "type": "single",
+                "question": "Why is experience of Requirements Engineers an influencing factor for RE process?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It affects salary"
+                    },
+                    {
+                        "id": "B",
+                        "text": "It influences the complexity and rigor of processes that can be applied"
+                    },
+                    {
+                        "id": "C",
+                        "text": "It determines project location"
+                    },
+                    {
+                        "id": "D",
+                        "text": "It affects documentation language"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 24,
+                "points": 1,
+                "type": "single",
+                "question": "What is the relationship between requirements and system development?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They are unrelated"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Requirements form the basis for development and evolution"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Development should start before requirements"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Requirements are only needed for documentation"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 25,
+                "points": 2,
+                "type": "single",
+                "question": "What is requirements validation concerned with?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Writing requirements"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Checking if the right requirements have been specified"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Implementing requirements"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Deleting requirements"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 26,
+                "points": 2,
+                "type": "single",
+                "question": "What is the benefit of using views for requirements?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To hide information"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To present different perspectives of requirements to different stakeholders"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To make requirements more complex"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To reduce the number of requirements"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 27,
+                "points": 2,
+                "type": "single",
+                "question": "What is syntactic quality of a model?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "How well it follows grammar rules"
+                    },
+                    {
+                        "id": "B",
+                        "text": "How well it complies with syntactic specifications of the modeling language"
+                    },
+                    {
+                        "id": "C",
+                        "text": "How expensive it is"
+                    },
+                    {
+                        "id": "D",
+                        "text": "How fast it can be read"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 28,
+                "points": 2,
+                "type": "single",
+                "question": "What risk exists when introducing a new RE tool?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Too much automation"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Loss of control over requirements during transition"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Tools are too simple"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Stakeholders become more involved"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 29,
+                "points": 2,
+                "type": "single",
+                "question": "What does Principle 9 (Systematic and disciplined work) emphasize?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Work should be random"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Systematic approach is essential for effective RE"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Discipline is not important"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only creativity matters"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 30,
+                "points": 1,
+                "type": "single",
+                "question": "What is the main advantage of workshops as an elicitation technique?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They are always cheap"
+                    },
+                    {
+                        "id": "B",
+                        "text": "They leverage interaction between participants to gain insights quickly"
+                    },
+                    {
+                        "id": "C",
+                        "text": "They require no preparation"
+                    },
+                    {
+                        "id": "D",
+                        "text": "They eliminate need for other techniques"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 31,
+                "points": 1,
+                "type": "single",
+                "question": "What should an RE process configuration consider regarding stakeholders?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Only their names"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Their capability and availability"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only their titles"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Their preferences for coffee"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 32,
+                "points": 2,
+                "type": "single",
+                "question": "Why is traceability important in requirements management?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To track expenses"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To link system behavior to original stakeholder demands and manage change impact"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To count requirements"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To locate documents"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 33,
+                "points": 2,
+                "type": "single",
+                "question": "What is the main purpose of abstraction in requirements?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To make requirements vague"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To manage complexity by focusing on essential aspects"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To reduce work"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To confuse stakeholders"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 34,
+                "points": 2,
+                "type": "single",
+                "question": "What are the three concepts that the term \"requirement\" denotes?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Cost, time, quality"
+                    },
+                    {
+                        "id": "B",
+                        "text": "A need, a capability/property, and a documented representation"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Plan, execute, verify"
+                    },
+                    {
+                        "id": "D",
+                        "text": "People, process, technology"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 35,
+                "points": 1,
+                "type": "single",
+                "question": "What are creativity techniques in RE used for?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To make meetings more fun"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To generate innovative ideas and discover delighters"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To reduce costs"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To speed up coding"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 36,
+                "points": 2,
+                "type": "single",
+                "question": "What should a change management process for requirements include?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Random approval"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Defined procedures for requesting, evaluating, and implementing changes"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Automatic rejection of all changes"
+                    },
+                    {
+                        "id": "D",
+                        "text": "No documentation"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 37,
+                "points": 1,
+                "type": "single",
+                "question": "What type of tool support helps with collaboration in RE?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Code compilers"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Tools that enable multiple people to work together on requirements"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Database tools only"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Hardware tools"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 38,
+                "points": 2,
+                "type": "single",
+                "question": "Why should work products be planned early in a project?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To delay the project"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To help plan efforts, resources, and ensure appropriate notations"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To create more meetings"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To avoid work"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 39,
+                "points": 1,
+                "type": "single",
+                "question": "What does \"shared understanding\" mean as an influencing factor?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Everyone has the same opinion"
+                    },
+                    {
+                        "id": "B",
+                        "text": "The degree to which stakeholders have common understanding of requirements"
+                    },
+                    {
+                        "id": "C",
+                        "text": "No disagreements exist"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only technical people understand"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 40,
+                "points": 2,
+                "type": "single",
+                "question": "What is the main focus of Principle 4 (Context)?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Systems can be understood in isolation"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Systems cannot be understood without their context"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Context is not important"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only technical context matters"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 41,
+                "points": 2,
+                "type": "single",
+                "question": "What is the purpose of conflict resolution techniques in RE?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To avoid conflicts entirely"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To address and resolve disagreements about requirements"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To eliminate stakeholders"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To ignore conflicts"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 42,
+                "points": 1,
+                "type": "single",
+                "question": "What is a key benefit of proper requirements management?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Increased costs"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Improved efficiency and effectiveness of system development"
+                    },
+                    {
+                        "id": "C",
+                        "text": "More meetings"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Longer project timelines"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 43,
+                "points": 1,
+                "type": "single",
+                "question": "What is a limitation of natural language for requirements?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It's too formal"
+                    },
+                    {
+                        "id": "B",
+                        "text": "It can be ambiguous and imprecise"
+                    },
+                    {
+                        "id": "C",
+                        "text": "It's too visual"
+                    },
+                    {
+                        "id": "D",
+                        "text": "It requires special tools"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 44,
+                "points": 1,
+                "type": "single",
+                "question": "When should employees be trained on a new RE tool?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Never"
+                    },
+                    {
+                        "id": "B",
+                        "text": "After the tool is selected and before full deployment"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only if they complain"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Five years after implementation"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 45,
+                "points": 2,
+                "type": "single",
+                "question": "What is the relationship between RE process and system development process?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They are completely independent"
+                    },
+                    {
+                        "id": "B",
+                        "text": "RE process must fit within and align with the overall development process"
+                    },
+                    {
+                        "id": "C",
+                        "text": "RE process should be the same for all projects"
+                    },
+                    {
+                        "id": "D",
+                        "text": "They should never interact"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            }
+        ]
+    },
+    "3": {
+        "title": "CPRE Final Exam 3",
+        "questions": [
+            {
+                "id": 1,
+                "points": 2,
+                "type": "single",
+                "question": "Which of the following is an advantage of model-based work products?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They are always easier to create than text"
+                    },
+                    {
+                        "id": "B",
+                        "text": "They provide better overview and visualization of relationships"
+                    },
+                    {
+                        "id": "C",
+                        "text": "They require no validation"
+                    },
+                    {
+                        "id": "D",
+                        "text": "They are always unambiguous"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 2,
+                "points": 1,
+                "type": "single",
+                "question": "What type of requirements do stakeholders typically voice most easily?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Delighters"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Satisfiers"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Dissatisfiers"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Non-functional requirements"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 3,
+                "points": 2,
+                "type": "single",
+                "question": "What is the purpose of requirements attributes?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To make requirements pretty"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To store metadata about requirements for management purposes"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To increase requirement length"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To hide requirements"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 4,
+                "points": 1,
+                "type": "single",
+                "question": "What makes RE challenging in practice?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It's too simple"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Stakeholders have diverse and sometimes conflicting needs"
+                    },
+                    {
+                        "id": "C",
+                        "text": "There are no tools available"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Requirements never change"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 5,
+                "points": 2,
+                "type": "single",
+                "question": "According to the RE principles, why must requirements evolve?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To keep people busy"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Because business, technology, and needs constantly change"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To increase costs"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Because developers want changes"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 6,
+                "points": 2,
+                "type": "single",
+                "question": "What is a key consideration for RE process configuration?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Making it as complex as possible"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Ensuring it fits the complexity and criticality of the system"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Using the same process for all projects"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Ignoring stakeholder needs"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 7,
+                "points": 2,
+                "type": "single",
+                "question": "What should be evaluated when selecting an RE tool?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Only the price"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Project, process, user, product, supplier, economic, and architecture perspectives"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only the brand name"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only the color scheme"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 8,
+                "points": 2,
+                "type": "single",
+                "question": "What is semantic quality in modeling?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "How pretty the model looks"
+                    },
+                    {
+                        "id": "B",
+                        "text": "How correctly and completely the model represents facts"
+                    },
+                    {
+                        "id": "C",
+                        "text": "How fast the model was created"
+                    },
+                    {
+                        "id": "D",
+                        "text": "How many colors are used"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 9,
+                "points": 2,
+                "type": "single",
+                "question": "What is the difference between quantitative and qualitative questionnaires?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Length of questions"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Quantitative use closed-ended questions, qualitative use open-ended questions"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Number of participants"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Time required"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 10,
+                "points": 2,
+                "type": "single",
+                "question": "Why do requirements need a status/life cycle model?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To make management more complex"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To track the state and evolution of requirements through their lifecycle"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To hide requirement status"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To increase costs"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 11,
+                "points": 2,
+                "type": "single",
+                "question": "What is the purpose of validation according to Principle 6?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To make requirements longer"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To confirm requirements match stakeholders' needs early and continuously"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To test code"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To reduce costs"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 12,
+                "points": 1,
+                "type": "single",
+                "question": "Which work product type is best for structured medium-sized artifacts like use cases?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Natural language paragraphs"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Form templates"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Complete models"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Code comments"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 13,
+                "points": 2,
+                "type": "single",
+                "question": "What does \"available time and budget\" influence in RE process configuration?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Nothing significant"
+                    },
+                    {
+                        "id": "B",
+                        "text": "The depth and rigor of RE activities that can be performed"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only documentation format"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Programming language choice"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 14,
+                "points": 1,
+                "type": "single",
+                "question": "Where can Requirements Engineering be applied?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Only in software projects"
+                    },
+                    {
+                        "id": "B",
+                        "text": "In any system development context including software, hardware, and services"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only in waterfall projects"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only in large organizations"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 15,
+                "points": 2,
+                "type": "single",
+                "question": "What is the main benefit of using interviews for elicitation?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They are very fast"
+                    },
+                    {
+                        "id": "B",
+                        "text": "They are flexible and can elicit detailed information"
+                    },
+                    {
+                        "id": "C",
+                        "text": "They require no preparation"
+                    },
+                    {
+                        "id": "D",
+                        "text": "They work for unlimited numbers of people"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 16,
+                "points": 1,
+                "type": "single",
+                "question": "What limitation do office tools have for requirements management?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Too expensive"
+                    },
+                    {
+                        "id": "B",
+                        "text": "They lack dedicated traceability, versioning, and requirements-specific features"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Too complex"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Require special hardware"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 17,
+                "points": 2,
+                "type": "single",
+                "question": "What is prioritization in requirements management?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Deleting requirements"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Ranking requirements by importance and implementation order"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Making all requirements equal"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Hiding low-priority requirements"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 18,
+                "points": 1,
+                "type": "single",
+                "question": "What should be ensured when using multiple work products?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They should be as different as possible"
+                    },
+                    {
+                        "id": "B",
+                        "text": "They should be kept consistent with each other"
+                    },
+                    {
+                        "id": "C",
+                        "text": "They should contradict each other"
+                    },
+                    {
+                        "id": "D",
+                        "text": "They should never reference each other"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 19,
+                "points": 2,
+                "type": "single",
+                "question": "What does innovation (Principle 8) mean in RE context?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Using new technology only"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Finding solutions that exceed stakeholder expectations"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Making requirements complex"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Following competitors"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 20,
+                "points": 2,
+                "type": "single",
+                "question": "What are delighters in the Kano model?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Requirements customers explicitly ask for"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Features that exceed expectations and create excitement"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Basic expected functionality"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Requirements that cause dissatisfaction"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 21,
+                "points": 1,
+                "type": "single",
+                "question": "Why is \"capability and availability of stakeholders\" an influencing factor?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It affects office space"
+                    },
+                    {
+                        "id": "B",
+                        "text": "It determines when and how stakeholders can participate in RE activities"
+                    },
+                    {
+                        "id": "C",
+                        "text": "It affects salary budgets"
+                    },
+                    {
+                        "id": "D",
+                        "text": "It determines project name"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 22,
+                "points": 2,
+                "type": "single",
+                "question": "What is a baseline used for in requirements management?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To start counting requirements"
+                    },
+                    {
+                        "id": "B",
+                        "text": "As a formally approved reference point for further development"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To delete old requirements"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To store passwords"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 23,
+                "points": 1,
+                "type": "single",
+                "question": "What is the main purpose of using a glossary in RE?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To make documents longer"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To ensure consistent use of terminology"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To confuse readers"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To replace requirements"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 24,
+                "points": 2,
+                "type": "single",
+                "question": "What should be done to mitigate risks when introducing a new tool?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Introduce it in all projects simultaneously"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Run pilot projects to test it on a small scale first"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Skip training"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Never test the tool"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 25,
+                "points": 1,
+                "type": "single",
+                "question": "What is the purpose of perspective-based reading in validation?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To read requirements faster"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To review requirements from different stakeholder viewpoints"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To translate requirements"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To delete requirements"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 26,
+                "points": 2,
+                "type": "single",
+                "question": "What is a key skill for a Requirements Engineer beyond technical knowledge?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Programming ability"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Soft skills like listening, moderating, and empathy"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Database administration"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Network configuration"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 27,
+                "points": 2,
+                "type": "single",
+                "question": "What does change management help prevent?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "All changes to requirements"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Uncontrolled and chaotic changes that harm project success"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Stakeholder involvement"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Documentation"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 28,
+                "points": 1,
+                "type": "single",
+                "question": "What is a document template used for?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Writing single requirements"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Providing predefined structure for complete documents"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Creating diagrams"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Testing software"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 29,
+                "points": 2,
+                "type": "single",
+                "question": "Why is shared understanding (Principle 3) important?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It's not important"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Without it, successful system development is impossible"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only for large projects"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only for agile projects"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 30,
+                "points": 1,
+                "type": "single",
+                "question": "What does \"constraints\" refer to as an influencing factor?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Project goals"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Restrictions that limit options for RE process configuration"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Stakeholder wishes"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Budget increases"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 31,
+                "points": 2,
+                "type": "single",
+                "question": "What is prototyping used for in RE?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Final product delivery"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Validating requirements and exploring solutions early"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Replacing documentation"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Testing hardware"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 32,
+                "points": 1,
+                "type": "single",
+                "question": "What type of tool support enables testing/simulation of requirements?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Document editors"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Advanced RE tools with testing and simulation capabilities"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Simple text editors"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Email clients"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 33,
+                "points": 2,
+                "type": "single",
+                "question": "Why is traceability necessary for impact analysis?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It's not necessary"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To understand how changes affect related requirements and artifacts"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To count requirements"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To hide dependencies"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 34,
+                "points": 2,
+                "type": "single",
+                "question": "What should be considered when selecting work products for a project?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "What looks most impressive"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Purpose, abstraction levels, level of detail, and representation format needed"
+                    },
+                    {
+                        "id": "C",
+                        "text": "What requires least effort"
+                    },
+                    {
+                        "id": "D",
+                        "text": "What competitors use"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 35,
+                "points": 1,
+                "type": "single",
+                "question": "What does a Requirements Engineer need to understand about stakeholders?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Only their names"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Their needs, desires, constraints, and perspectives"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only their job titles"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Their salaries"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 36,
+                "points": 1,
+                "type": "single",
+                "question": "What is document analysis as an elicitation technique?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Deleting old documents"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Extracting requirements from existing documentation and systems"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Writing new documents"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Counting pages"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 37,
+                "points": 2,
+                "type": "single",
+                "question": "What are meaningful assessment criteria for prioritization?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Random selection"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Business value, risk, cost, dependencies, and stakeholder importance"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Document length"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Alphabetical order"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 38,
+                "points": 2,
+                "type": "single",
+                "question": "What is the relationship between problem, requirement, and solution according to Principle 5?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They are completely separate"
+                    },
+                    {
+                        "id": "B",
+                        "text": "They are intertwined and influence each other"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only solution matters"
+                    },
+                    {
+                        "id": "D",
+                        "text": "They should never be discussed together"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 39,
+                "points": 2,
+                "type": "single",
+                "question": "What is the goal of configuring an RE process?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To make work more complicated"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To create a process that fits the specific project context and needs"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To follow standards blindly"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To minimize documentation"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 40,
+                "points": 2,
+                "type": "single",
+                "question": "What type of model focuses on system behavior and state transitions?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Data model"
+                    },
+                    {
+                        "id": "B",
+                        "text": "State machine or behavior model"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Context model"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Structure model"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 41,
+                "points": 1,
+                "type": "single",
+                "question": "What perspective should be considered when evaluating tools regarding user satisfaction?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Economic perspective"
+                    },
+                    {
+                        "id": "B",
+                        "text": "User perspective"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Supplier perspective"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Architecture perspective"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 42,
+                "points": 2,
+                "type": "single",
+                "question": "What is brainstorming used for in RE?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Testing requirements"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Generating creative ideas for innovative solutions"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Documenting requirements"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Managing conflicts"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 43,
+                "points": 1,
+                "type": "single",
+                "question": "What is the difference between implicit and explicit traceability?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "No difference"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Implicit is inferred, explicit is documented with links"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Implicit is better"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Explicit is hidden"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 44,
+                "points": 2,
+                "type": "single",
+                "question": "Why should redundancy be avoided in documentation?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To make documents shorter"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To prevent inconsistencies and reduce maintenance effort"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To save paper"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To confuse readers"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 45,
+                "points": 1,
+                "type": "single",
+                "question": "What is the relationship between RE process and working structure?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They are unrelated"
+                    },
+                    {
+                        "id": "B",
+                        "text": "RE process shapes information flow and defines roles and communication"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only process matters"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only structure matters"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            }
+        ]
+    },
+    "4": {
+        "title": "CPRE Final Exam 4",
+        "questions": [
+            {
+                "id": 1,
+                "points": 2,
+                "type": "single",
+                "question": "What is a stakeholder in RE?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Only the project manager"
+                    },
+                    {
+                        "id": "B",
+                        "text": "A person or organization that has interest in or influence on the system"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only the developers"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only the customers"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 2,
+                "points": 1,
+                "type": "single",
+                "question": "What is the purpose of modeling context in RE?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To create pretty pictures"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To show system boundaries and external actors/interfaces"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To replace all documentation"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To test code"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 3,
+                "points": 2,
+                "type": "single",
+                "question": "What types of prioritization techniques exist?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Only voting"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Analytical (e.g., cost-benefit), negotiation-based, and ranking techniques"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only random selection"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only alphabetical"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 4,
+                "points": 1,
+                "type": "single",
+                "question": "What is the ultimate goal of Requirements Engineering?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To create documentation"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To build systems that satisfy stakeholder needs and desires"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To follow processes"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To use tools"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 5,
+                "points": 2,
+                "type": "single",
+                "question": "Why is systematic and disciplined work (Principle 9) necessary in RE?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It's not necessary"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Because RE complexity requires structured approaches to be effective"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To slow down projects"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To create more paperwork"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 6,
+                "points": 2,
+                "type": "single",
+                "question": "What is meant by \"overall process fit\"?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Physical fitness of team members"
+                    },
+                    {
+                        "id": "B",
+                        "text": "How well the RE process integrates with the development process"
+                    },
+                    {
+                        "id": "C",
+                        "text": "How fast the process is"
+                    },
+                    {
+                        "id": "D",
+                        "text": "How cheap the process is"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 7,
+                "points": 1,
+                "type": "single",
+                "question": "What type of tool support helps with sharing requirements?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Hardware tools"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Documentation and collaboration tools"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Testing tools only"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Compilers"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 8,
+                "points": 2,
+                "type": "single",
+                "question": "Which aspect of requirements focuses on system inputs, outputs, and transformations?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "State and behavior"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Function and flow"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Structure and data"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Context"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 9,
+                "points": 2,
+                "type": "single",
+                "question": "What validation technique involves creating a working prototype?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Walkthroughs"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Exploratory techniques like prototyping"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Inspections only"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Document analysis"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 10,
+                "points": 2,
+                "type": "single",
+                "question": "What is version control important for?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Counting requirements"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Managing evolution of work products through multiple versions"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Deleting old files"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Storing passwords"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 11,
+                "points": 2,
+                "type": "single",
+                "question": "What does value-orientation (Principle 1) require from Requirements Engineers?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Maximize documentation"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Balance benefit against cost of RE activities"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Minimize all RE activities"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Ignore costs"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 12,
+                "points": 2,
+                "type": "single",
+                "question": "Why is volatility of requirements an important influencing factor?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It affects hardware"
+                    },
+                    {
+                        "id": "B",
+                        "text": "It determines how flexible and adaptive the RE process must be"
+                    },
+                    {
+                        "id": "C",
+                        "text": "It affects project name"
+                    },
+                    {
+                        "id": "D",
+                        "text": "It determines office location"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 13,
+                "points": 1,
+                "type": "single",
+                "question": "What is a phrase template typically used for?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Complete documents"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Writing individual requirements or user stories"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Diagrams"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Test cases"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 14,
+                "points": 2,
+                "type": "single",
+                "question": "What should be done after an RE tool is selected?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Nothing further needed"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Train users and adapt RE process to leverage tool capabilities"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Buy more tools"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Start a new project"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 15,
+                "points": 1,
+                "type": "single",
+                "question": "What is a workshop in RE context?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A hardware repair session"
+                    },
+                    {
+                        "id": "B",
+                        "text": "A structured meeting where stakeholders collaborate on requirements"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Individual work session"
+                    },
+                    {
+                        "id": "D",
+                        "text": "A coding session"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 16,
+                "points": 2,
+                "type": "single",
+                "question": "What is the purpose of defining a life cycle for requirements?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To measure age"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To track status transitions from creation through implementation"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To delete requirements"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To hide information"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 17,
+                "points": 1,
+                "type": "single",
+                "question": "How does RE contribute to risk reduction?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It doesn't"
+                    },
+                    {
+                        "id": "B",
+                        "text": "By ensuring the right system is built before expensive development starts"
+                    },
+                    {
+                        "id": "C",
+                        "text": "By increasing documentation"
+                    },
+                    {
+                        "id": "D",
+                        "text": "By extending timelines"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 18,
+                "points": 2,
+                "type": "single",
+                "question": "What advantage do templates provide for requirements documentation?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They slow down work"
+                    },
+                    {
+                        "id": "B",
+                        "text": "They provide structure and improve quality consistency"
+                    },
+                    {
+                        "id": "C",
+                        "text": "They prevent stakeholder involvement"
+                    },
+                    {
+                        "id": "D",
+                        "text": "They eliminate the need for validation"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 19,
+                "points": 2,
+                "type": "single",
+                "question": "According to Principle 4 (Context), what must be understood about a system?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Only internal structure"
+                    },
+                    {
+                        "id": "B",
+                        "text": "System boundary, context, external actors, and interfaces"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only technology stack"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only costs"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 20,
+                "points": 2,
+                "type": "single",
+                "question": "What are dissatisfiers in the Kano model?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Features that excite customers"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Basic expected features whose absence causes dissatisfaction"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Optional features"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Expensive features"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 21,
+                "points": 1,
+                "type": "single",
+                "question": "What does \"development context\" include as an influencing factor?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Only programming language"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Development approach (plan-driven vs. agile), team structure, and constraints"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only team size"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only location"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 22,
+                "points": 2,
+                "type": "single",
+                "question": "Why is traceability important for requirements management?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It's not important"
+                    },
+                    {
+                        "id": "B",
+                        "text": "It links requirements to their sources and implementation for verification"
+                    },
+                    {
+                        "id": "C",
+                        "text": "It makes work more complex"
+                    },
+                    {
+                        "id": "D",
+                        "text": "It increases costs only"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 23,
+                "points": 2,
+                "type": "single",
+                "question": "What is a key consideration for tool architecture perspective?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Tool color"
+                    },
+                    {
+                        "id": "B",
+                        "text": "How tool fits into IT landscape and integrates with other systems"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Tool weight"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Tool brand popularity"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 24,
+                "points": 1,
+                "type": "single",
+                "question": "What should work products be selected based on?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Personal preference"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Intended purpose and project needs"
+                    },
+                    {
+                        "id": "C",
+                        "text": "What's easiest"
+                    },
+                    {
+                        "id": "D",
+                        "text": "What competitors use"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 25,
+                "points": 2,
+                "type": "single",
+                "question": "What is requirements elicitation?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Deleting requirements"
+                    },
+                    {
+                        "id": "B",
+                        "text": "The process of discovering and gathering requirements from sources"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Testing requirements"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Implementing requirements"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 26,
+                "points": 1,
+                "type": "single",
+                "question": "What makes a good Requirements Engineer?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Only technical skills"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Combination of technical skills, analytical ability, and soft skills"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only soft skills"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only management experience"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 27,
+                "points": 2,
+                "type": "single",
+                "question": "What is configuration management in RE?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Computer settings"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Managing coherent sets of requirements as configurations and baselines"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Network configuration"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Hardware setup"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 28,
+                "points": 2,
+                "type": "single",
+                "question": "What is the essence of stakeholder principle (Principle 2)?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Minimize stakeholder involvement"
+                    },
+                    {
+                        "id": "B",
+                        "text": "RE must focus on satisfying stakeholder needs and desires"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only some stakeholders matter"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Stakeholders should not influence requirements"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 29,
+                "points": 2,
+                "type": "single",
+                "question": "What should be considered regarding system complexity as an influencing factor?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Nothing specific"
+                    },
+                    {
+                        "id": "B",
+                        "text": "More complex systems require more rigorous RE processes"
+                    },
+                    {
+                        "id": "C",
+                        "text": "All systems need same process"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Simple processes for complex systems"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 30,
+                "points": 2,
+                "type": "single",
+                "question": "What is structure and data modeling concerned with?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "System behavior"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Data structures, entities, relationships, and information architecture"
+                    },
+                    {
+                        "id": "C",
+                        "text": "System context"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only visual design"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 31,
+                "points": 1,
+                "type": "single",
+                "question": "Why might different tools need to be combined for RE?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To increase costs"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Because no single tool covers all RE activities comprehensively"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To confuse users"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To satisfy vendors"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 32,
+                "points": 2,
+                "type": "single",
+                "question": "What is the goal of conflict resolution in RE?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To eliminate all stakeholders"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To address and resolve disagreements about requirements constructively"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To ignore conflicts"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To force a single viewpoint"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 33,
+                "points": 1,
+                "type": "single",
+                "question": "What steps are involved in prioritizing requirements?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Random selection"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Define criteria, assess requirements, rank them, and validate with stakeholders"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Let manager decide alone"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Use only cost"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 34,
+                "points": 2,
+                "type": "single",
+                "question": "Why is it important to plan work products early?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To delay project start"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To ensure proper resource allocation and consistent approach"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To create more meetings"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To satisfy auditors only"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 35,
+                "points": 2,
+                "type": "single",
+                "question": "What is the key message of evolution principle (Principle 7)?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Prevent all changes"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Plan for and manage change as it's inevitable"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only agile projects have changes"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Changes are always bad"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 36,
+                "points": 1,
+                "type": "single",
+                "question": "What does \"experience of Requirements Engineers\" influence?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Only salary"
+                    },
+                    {
+                        "id": "B",
+                        "text": "The sophistication and effectiveness of RE practices that can be applied"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Nothing important"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only documentation format"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 37,
+                "points": 1,
+                "type": "single",
+                "question": "What is the benefit of using questionnaires versus interviews?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Questionnaires are always better"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Questionnaires can reach larger groups more efficiently"
+                    },
+                    {
+                        "id": "C",
+                        "text": "No benefit"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Questionnaires require no planning"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 38,
+                "points": 2,
+                "type": "single",
+                "question": "What is the economic perspective for tool evaluation concerned with?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Tool aesthetics"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Cost-benefit analysis of the tool"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Tool speed only"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Tool popularity"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 39,
+                "points": 1,
+                "type": "single",
+                "question": "What is the relationship between requirements attributes and views?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They are unrelated"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Views use attributes to filter and present requirements to different audiences"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Attributes replace views"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Views replace attributes"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 40,
+                "points": 2,
+                "type": "single",
+                "question": "What is semantic quality concerned with?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Document length"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Correctness and completeness of representation"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Visual appearance"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Creation speed"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 41,
+                "points": 2,
+                "type": "single",
+                "question": "What is the scope of Requirements Engineering?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Only software requirements"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Requirements for any type of system in any domain"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only functional requirements"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only technical requirements"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 42,
+                "points": 2,
+                "type": "single",
+                "question": "What makes observation techniques valuable?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They are fast"
+                    },
+                    {
+                        "id": "B",
+                        "text": "They reveal actual behavior and needs that stakeholders may not articulate"
+                    },
+                    {
+                        "id": "C",
+                        "text": "They require no training"
+                    },
+                    {
+                        "id": "D",
+                        "text": "They eliminate need for other techniques"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 43,
+                "points": 2,
+                "type": "single",
+                "question": "How does prioritization support decision-making?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It doesn't"
+                    },
+                    {
+                        "id": "B",
+                        "text": "It helps determine which requirements to implement given limited resources"
+                    },
+                    {
+                        "id": "C",
+                        "text": "It makes all requirements equal"
+                    },
+                    {
+                        "id": "D",
+                        "text": "It eliminates need for requirements"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 44,
+                "points": 1,
+                "type": "single",
+                "question": "What is the purpose of defining an RE process?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To create bureaucracy"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To structure and guide RE work effectively in the given context"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To slow down projects"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To eliminate stakeholder involvement"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 45,
+                "points": 1,
+                "type": "single",
+                "question": "What should be considered from the supplier perspective when evaluating tools?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Supplier location only"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Service quality, reliability, support, and tool roadmap"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Supplier brand only"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Supplier size only"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            }
+        ]
+    },
+    "5": {
+        "title": "CPRE Final Exam 5",
+        "questions": [
+            {
+                "id": 1,
+                "points": 2,
+                "type": "single",
+                "question": "What is the primary benefit mentioned in the value-orientation principle?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Reducing costs"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Building systems that satisfy stakeholder needs and reduce failure risk"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Increasing documentation"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Using more tools"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 2,
+                "points": 1,
+                "type": "single",
+                "question": "What is the relationship between different aspects in requirements documentation?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They are independent"
+                    },
+                    {
+                        "id": "B",
+                        "text": "They are interrelated and must be kept consistent"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only one aspect should be documented"
+                    },
+                    {
+                        "id": "D",
+                        "text": "They should contradict each other"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 3,
+                "points": 2,
+                "type": "single",
+                "question": "What category of elicitation technique does interviews belong to?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Observation techniques"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Questioning techniques"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Creativity techniques"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Artifact-based techniques"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 4,
+                "points": 2,
+                "type": "single",
+                "question": "What is the main goal of requirements management?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To create more requirements"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To maintain requirements so all roles can work effectively and efficiently"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To delete requirements"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To hide requirements from stakeholders"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 5,
+                "points": 1,
+                "type": "single",
+                "question": "What are the three fundamental concepts denoted by \"requirement\"?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Input, process, output"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Need, capability/property, documented representation"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Cost, benefit, risk"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Plan, do, check"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 6,
+                "points": 2,
+                "type": "single",
+                "question": "Why must an RE process be tailored?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To make it unique"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Because there is no one-size-fits-all process that works for all contexts"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To increase complexity"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To satisfy auditors"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 7,
+                "points": 1,
+                "type": "single",
+                "question": "What type of tool support is concerned with managing RE workflow?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Management of requirements"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Management of the RE process"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Modeling of requirements"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Documentation of knowledge"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 8,
+                "points": 2,
+                "type": "single",
+                "question": "What quality criterion assesses if a model is suitable for its intended use?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Syntactic quality"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Pragmatic quality"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Semantic quality"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Economic quality"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 9,
+                "points": 2,
+                "type": "single",
+                "question": "What is the main characteristic of creativity techniques?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They follow strict rules"
+                    },
+                    {
+                        "id": "B",
+                        "text": "They encourage free thinking to generate innovative ideas"
+                    },
+                    {
+                        "id": "C",
+                        "text": "They only document existing requirements"
+                    },
+                    {
+                        "id": "D",
+                        "text": "They focus on cost reduction"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 10,
+                "points": 2,
+                "type": "single",
+                "question": "According to Principle 5, why are problem, requirement, and solution intertwined?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They aren't intertwined"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Understanding problems influences requirements, and solution possibilities affect both"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only for complex projects"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only in waterfall development"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 11,
+                "points": 2,
+                "type": "single",
+                "question": "What does \"storing\" requirements mean in requirements management?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Physically storing documents"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Maintaining requirements in accessible and organized repositories"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Hiding requirements"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Archiving old projects"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 12,
+                "points": 1,
+                "type": "single",
+                "question": "What is the purpose of a system context model?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To show internal structure"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To show system boundary and external interactions"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To replace all documentation"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To test system"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 13,
+                "points": 2,
+                "type": "single",
+                "question": "What does \"criticality of the system\" refer to?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "How expensive it is"
+                    },
+                    {
+                        "id": "B",
+                        "text": "The potential impact of system failure or defects"
+                    },
+                    {
+                        "id": "C",
+                        "text": "How many users it has"
+                    },
+                    {
+                        "id": "D",
+                        "text": "How long development takes"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 14,
+                "points": 1,
+                "type": "single",
+                "question": "Why is RE knowledge useful for testers and architects?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It's not useful for them"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Understanding requirements helps them perform their roles more effectively"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only Requirements Engineers need RE knowledge"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To replace Requirements Engineers"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 15,
+                "points": 2,
+                "type": "single",
+                "question": "What is artifact-based elicitation?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Creating art"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Deriving requirements from existing documents, systems, or artifacts"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Deleting requirements"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Testing software"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 16,
+                "points": 2,
+                "type": "single",
+                "question": "What is a key risk of not properly training users on a new RE tool?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Too much efficiency"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Tool capabilities won't be fully utilized or may be misused"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Over-documentation"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Too much automation"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 17,
+                "points": 2,
+                "type": "single",
+                "question": "What is meant by \"changing\" requirements in requirements management?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Randomly modifying requirements"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Handling requirements changes in a controlled manner"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Preventing all changes"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Deleting requirements"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 18,
+                "points": 2,
+                "type": "single",
+                "question": "What advantage do models have over pure natural language?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They are always faster to create"
+                    },
+                    {
+                        "id": "B",
+                        "text": "They provide better overview and show relationships visually"
+                    },
+                    {
+                        "id": "C",
+                        "text": "They never need validation"
+                    },
+                    {
+                        "id": "D",
+                        "text": "They are always unambiguous"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 19,
+                "points": 2,
+                "type": "single",
+                "question": "What is shared understanding (Principle 3) necessary for?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It's not necessary"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Successful system development requires common understanding among stakeholders"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only for documentation"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only for testing"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 20,
+                "points": 1,
+                "type": "single",
+                "question": "What makes field observation different from interviews?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "No difference"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Observation watches actual behavior in real environment, interviews ask questions"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Observation is faster"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Interviews are always better"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 21,
+                "points": 1,
+                "type": "single",
+                "question": "What should be balanced when configuring an RE process?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Cost only"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Rigor and formality versus agility and time constraints"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Documentation size"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Number of meetings"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 22,
+                "points": 2,
+                "type": "single",
+                "question": "Why is it important to document traceability links explicitly?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It's not important"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To enable systematic impact analysis and verification"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To make work more complex"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To satisfy auditors only"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 23,
+                "points": 1,
+                "type": "single",
+                "question": "What is a disadvantage of using templates?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They provide structure"
+                    },
+                    {
+                        "id": "B",
+                        "text": "People may focus on form over content"
+                    },
+                    {
+                        "id": "C",
+                        "text": "They improve quality"
+                    },
+                    {
+                        "id": "D",
+                        "text": "They are reusable"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 24,
+                "points": 2,
+                "type": "single",
+                "question": "What does collaboration support in RE tools provide?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Hardware connectivity"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Capabilities for multiple people to work together on requirements"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Code compilation"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Database management"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 25,
+                "points": 2,
+                "type": "single",
+                "question": "What is the purpose of validation techniques?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To create requirements"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To verify that documented requirements match stakeholder needs"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To delete requirements"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To implement requirements"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 26,
+                "points": 1,
+                "type": "single",
+                "question": "What is a requirements specification?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "A single requirement"
+                    },
+                    {
+                        "id": "B",
+                        "text": "A systematically represented collection of requirements"
+                    },
+                    {
+                        "id": "C",
+                        "text": "A test plan"
+                    },
+                    {
+                        "id": "D",
+                        "text": "A project schedule"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 27,
+                "points": 2,
+                "type": "single",
+                "question": "What are typical reasons for requirements to change?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Random factors only"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Business changes, technology evolution, stakeholder feedback, and market dynamics"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only developer preferences"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only cost considerations"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 28,
+                "points": 2,
+                "type": "single",
+                "question": "What does innovation principle (Principle 8) encourage?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Copying competitors"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Going beyond stated needs to delight stakeholders"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Minimizing features"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Following only explicit requirements"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 29,
+                "points": 1,
+                "type": "single",
+                "question": "Why is stakeholder availability an important factor?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "For scheduling meetings only"
+                    },
+                    {
+                        "id": "B",
+                        "text": "It constrains when elicitation and validation activities can occur"
+                    },
+                    {
+                        "id": "C",
+                        "text": "For determining salaries"
+                    },
+                    {
+                        "id": "D",
+                        "text": "For office assignments"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 30,
+                "points": 2,
+                "type": "single",
+                "question": "What should be included in requirements documentation according to general guidelines?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Only functional requirements"
+                    },
+                    {
+                        "id": "B",
+                        "text": "All relevant aspects: structure, function, behavior, context, and quality"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only technical details"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only what developers need"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 31,
+                "points": 1,
+                "type": "single",
+                "question": "What should be evaluated from the product perspective when selecting tools?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Product packaging"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Functionality coverage, data storage, roadmap, and ongoing support"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Product color scheme"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Product weight"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 32,
+                "points": 2,
+                "type": "single",
+                "question": "What is the main purpose of requirements sources analysis?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To delete sources"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To identify where requirements can be obtained"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To create sources"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To hide sources"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 33,
+                "points": 1,
+                "type": "single",
+                "question": "What makes a prioritization technique meaningful?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Random selection"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Clear criteria, stakeholder involvement, and transparency"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Manager decision only"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Alphabetical ordering"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 34,
+                "points": 2,
+                "type": "single",
+                "question": "Why should terms be used consistently in documentation?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To make documents longer"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To avoid misunderstandings and ensure clear communication"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To confuse readers"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To follow arbitrary rules"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 35,
+                "points": 2,
+                "type": "single",
+                "question": "What is the key challenge described in Principle 5 (Problem-Requirement-Solution)?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They are easy to separate"
+                    },
+                    {
+                        "id": "B",
+                        "text": "They influence each other and cannot be completely separated"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only solution matters"
+                    },
+                    {
+                        "id": "D",
+                        "text": "They are unrelated"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 36,
+                "points": 2,
+                "type": "single",
+                "question": "What does the RE process define?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Only documentation format"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Information flow, communication model, and work products"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Only meeting schedules"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Only tool selection"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 37,
+                "points": 1,
+                "type": "single",
+                "question": "What is the relationship between stakeholder roles and requirements?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "No relationship"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Different stakeholders have different needs and perspectives on requirements"
+                    },
+                    {
+                        "id": "C",
+                        "text": "All stakeholders want the same thing"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Stakeholders don't influence requirements"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 38,
+                "points": 2,
+                "type": "single",
+                "question": "Why should tools be evaluated from multiple perspectives?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To make evaluation more complex"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To ensure tools meet diverse needs of all stakeholders and contexts"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To delay tool selection"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To justify expensive tools"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 39,
+                "points": 1,
+                "type": "single",
+                "question": "What is the benefit of using views in requirements management?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To hide information"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To present relevant subsets of requirements to different stakeholders"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To create more work"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To reduce transparency"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 40,
+                "points": 2,
+                "type": "single",
+                "question": "What makes modeling particularly useful for complex requirements?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "It's always faster"
+                    },
+                    {
+                        "id": "B",
+                        "text": "It helps manage complexity through abstraction and visualization"
+                    },
+                    {
+                        "id": "C",
+                        "text": "It requires no training"
+                    },
+                    {
+                        "id": "D",
+                        "text": "It eliminates ambiguity completely"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 41,
+                "points": 2,
+                "type": "single",
+                "question": "What is the relationship between RE and risk management?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They are unrelated"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Good RE reduces project risks by ensuring correct system is built"
+                    },
+                    {
+                        "id": "C",
+                        "text": "RE increases risk"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Risk management replaces RE"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 42,
+                "points": 2,
+                "type": "single",
+                "question": "What makes workshops effective for requirements elicitation?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "They are cheap"
+                    },
+                    {
+                        "id": "B",
+                        "text": "They leverage group dynamics and diverse perspectives"
+                    },
+                    {
+                        "id": "C",
+                        "text": "They require no preparation"
+                    },
+                    {
+                        "id": "D",
+                        "text": "They eliminate need for other techniques"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 43,
+                "points": 2,
+                "type": "single",
+                "question": "What is \"tracing\" in requirements management?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "Drawing diagrams"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Following relationships and dependencies between requirements and artifacts"
+                    },
+                    {
+                        "id": "C",
+                        "text": "Copying requirements"
+                    },
+                    {
+                        "id": "D",
+                        "text": "Deleting requirements"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 44,
+                "points": 1,
+                "type": "single",
+                "question": "Why might different projects need different RE processes?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To be unique"
+                    },
+                    {
+                        "id": "B",
+                        "text": "Because contexts, constraints, and needs vary between projects"
+                    },
+                    {
+                        "id": "C",
+                        "text": "For no good reason"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To confuse teams"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
+            },
+            {
+                "id": 45,
+                "points": 1,
+                "type": "single",
+                "question": "What is the main purpose of RE tool support?",
+                "options": [
+                    {
+                        "id": "A",
+                        "text": "To replace Requirements Engineers"
+                    },
+                    {
+                        "id": "B",
+                        "text": "To make RE activities more efficient and effective"
+                    },
+                    {
+                        "id": "C",
+                        "text": "To increase costs"
+                    },
+                    {
+                        "id": "D",
+                        "text": "To create more documentation"
+                    }
+                ],
+                "correctAnswers": [
+                    "B"
+                ],
+                "explanation": "Correct answer is B"
             }
         ]
     }
 };
 
-// Continue with more exams...
-// Note: Due to length, this is a template. The actual file would contain all 225 questions across 5 exams.
+// Export for use in app.js
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = allExams;
+}
